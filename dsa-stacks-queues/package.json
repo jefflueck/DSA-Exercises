@@ -1,11 +1,12 @@
 {
-  "name": "dsa-arrays-linked-lists",
+  "name": "dsa-stacks-queues",
   "version": "1.0.0",
   "description": "",
-  "main": "doubly-linked-list.js",
+  "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
