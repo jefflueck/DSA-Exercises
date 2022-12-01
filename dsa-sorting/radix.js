@@ -48,6 +48,24 @@ function radixSort(nums) {
   return nums;
 }
 
+let maxNum = getDigit(12345, 0);
+console.log(
+  `Helper function getDigit returns ${maxNum} for the number 12345 starting from the index 0 telling us that the last digits value is 5`
+);
+
+let mostNum = mostDigits([1234, 56, 7]);
+console.log(
+  `Helper function mostDigits returns ${mostNum} for the array [1234, 56, 7] telling us that the number with the most digits is 1234`
+);
+
+let digCount = digitCount(12345);
+console.log(
+  `Helper function digitCount returns ${digCount} for the number 12345 telling us the number of digits in the number`
+);
+
+let result = radixSort([23, 345, 5467, 12, 2345, 9852]);
+console.log(`The result of the radixSort function is ${result}`);
+
 module.exports = { getDigit, digitCount, mostDigits, radixSort };
 
 // module.exports = radixSort;

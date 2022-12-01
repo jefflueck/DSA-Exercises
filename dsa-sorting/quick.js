@@ -28,4 +28,13 @@ function quickSort(arr) {
   return [...left, arr[pivotIdx], ...right];
 }
 
+let pivotIdx = pivot([4, 8, 2, 1, 5, 7, 6, 3]);
+console.log(
+  `The pivot helper function returns the pivot value of ${pivotIdx} for the array [4, 8, 2, 1, 5, 7, 6, 3]`
+);
+
+let quickSortArr = quickSort([4, 8, 2, 1, 5, 7, 6, 3]);
+console.log(
+  `The quickSort function returns the sorted array of ${quickSortArr} for the array [4, 8, 2, 1, 5, 7, 6, 3] by using the returned pivot value of ${pivotIdx} as its starting point to sort the array left of the pivot value ${pivotIdx} and right of the pivot value ${pivotIdx}`
+);
 module.exports = { quickSort, pivot };
